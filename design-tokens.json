@@ -1,0 +1,231 @@
+{
+  "name": "Contentful",
+  "overview": "The composable content platform",
+  "colors": {
+    "core": [
+      {
+        "name": "Brand Blue",
+        "hex": "#0286C3",
+        "usage": "CTAs, links, active states"
+      },
+      {
+        "name": "Blue Dark",
+        "hex": "#0073AA",
+        "usage": "Hover states"
+      },
+      {
+        "name": "Teal",
+        "hex": "#17B897",
+        "usage": "Success highlights, content status"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Text Primary",
+        "hex": "#1B1E28",
+        "usage": "Headings, body"
+      },
+      {
+        "name": "Text Secondary",
+        "hex": "#536171",
+        "usage": "Captions, metadata"
+      },
+      {
+        "name": "Text Muted",
+        "hex": "#8DA4BE",
+        "usage": "Placeholders"
+      },
+      {
+        "name": "Background",
+        "hex": "#F7F9FA",
+        "usage": "App background"
+      },
+      {
+        "name": "Surface",
+        "hex": "#FFFFFF",
+        "usage": "Cards, panels"
+      },
+      {
+        "name": "Border",
+        "hex": "#CFD9E0",
+        "usage": "Input borders, dividers"
+      },
+      {
+        "name": "Border Subtle",
+        "hex": "#E5EBED",
+        "usage": "Section dividers"
+      }
+    ],
+    "semantic": [
+      {
+        "name": "Success",
+        "hex": "#17B897",
+        "usage": "Published, done"
+      },
+      {
+        "name": "Warning",
+        "hex": "#F5A623",
+        "usage": "Draft, review needed"
+      },
+      {
+        "name": "Error",
+        "hex": "#D32F2F",
+        "usage": "Errors, blocked"
+      },
+      {
+        "name": "Info",
+        "hex": "#0286C3",
+        "usage": "Tips, notices"
+      }
+    ]
+  },
+  "typography": {
+    "fonts": [
+      {
+        "role": "Primary",
+        "family": "Avenir Next",
+        "url": null
+      },
+      {
+        "role": "Primary",
+        "family": "Mono",
+        "url": null
+      }
+    ],
+    "scale": [
+      {
+        "level": "H1",
+        "family": "Avenir Next",
+        "size": "32px",
+        "weight": "700",
+        "lineHeight": "1.2"
+      },
+      {
+        "level": "H2",
+        "family": "Avenir Next",
+        "size": "24px",
+        "weight": "600",
+        "lineHeight": "1.3"
+      },
+      {
+        "level": "H3",
+        "family": "Avenir Next",
+        "size": "18px",
+        "weight": "600",
+        "lineHeight": "1.4"
+      },
+      {
+        "level": "Body",
+        "family": "Avenir Next",
+        "size": "14px",
+        "weight": "400",
+        "lineHeight": "1.6"
+      },
+      {
+        "level": "Small",
+        "family": "Avenir Next",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "1.5"
+      },
+      {
+        "level": "Button",
+        "family": "Avenir Next",
+        "size": "14px",
+        "weight": "500",
+        "lineHeight": "1"
+      },
+      {
+        "level": "Code",
+        "family": "Mono",
+        "size": "13px",
+        "weight": "400",
+        "lineHeight": "1.6"
+      }
+    ]
+  },
+  "spacing": {
+    "base": "8px",
+    "scale": [
+      {
+        "token": "4px",
+        "value": "",
+        "usage": "Tight label-icon gaps"
+      },
+      {
+        "token": "8px",
+        "value": "",
+        "usage": "Form field padding"
+      },
+      {
+        "token": "12px",
+        "value": "",
+        "usage": "Button padding"
+      },
+      {
+        "token": "16px",
+        "value": "",
+        "usage": "Card padding, field gaps"
+      },
+      {
+        "token": "24px",
+        "value": "",
+        "usage": "Section separation"
+      },
+      {
+        "token": "32px",
+        "value": "",
+        "usage": "Component blocks"
+      },
+      {
+        "token": "48px",
+        "value": "",
+        "usage": "Page sections"
+      }
+    ]
+  },
+  "borderRadius": [
+    {
+      "token": "None",
+      "value": "0px",
+      "usage": "Table rows, full-width banners"
+    },
+    {
+      "token": "Sm",
+      "value": "4px",
+      "usage": "Buttons, inputs, badges"
+    },
+    {
+      "token": "Md",
+      "value": "6px",
+      "usage": "Cards, modals"
+    },
+    {
+      "token": "Full",
+      "value": "9999px",
+      "usage": "Avatars, status chips"
+    }
+  ],
+  "elevation": [
+    {
+      "level": "Flat",
+      "value": "none",
+      "usage": "Tables, form fields"
+    },
+    {
+      "level": "Raised",
+      "value": "0 1px 2px rgba(0,0,0,0.1)",
+      "usage": "Cards"
+    },
+    {
+      "level": "Overlay",
+      "value": "0 4px 8px rgba(0,0,0,0.12)",
+      "usage": "Dropdowns"
+    },
+    {
+      "level": "Modal",
+      "value": "0 8px 24px rgba(0,0,0,0.15)",
+      "usage": "Dialogs"
+    }
+  ]
+}

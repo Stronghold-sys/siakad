@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class StoreMahasiswaRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'nim' => ['required', 'string', 'unique:mahasiswas,nim'],
+            'nama' => ['required', 'string', 'min:3'],
+            'jurusan_id' => ['required', 'exists:jurusans,id'],
+        ];
+    }
+
+    /**
+     * Get custom messages for validator errors.
+     */
+    public function messages(): array
+    {
+        return [
+            'nim.required' => 'NIM wajib diisi.',
+            'nim.unique' => 'NIM sudah terdaftar.',
+            'nama.required' => 'Nama wajib diisi.',
+            'nama.min' => 'Nama minimal terdiri dari 3 karakter.',
+            'jurusan_id.required' => 'Jurusan wajib dipilih.',
+            'jurusan_id.exists' => 'Jurusan tidak valid.',
+        ];
+    }
+}
